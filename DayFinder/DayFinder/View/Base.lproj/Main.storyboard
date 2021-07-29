@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v8o-6S-fVT">
-    <device id="retina6_5" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -105,21 +105,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgH-Uq-afQ">
-                                <rect key="frame" x="90" y="380" width="234" height="38"/>
-                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="94Y-Su-Tj3"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="EAF-Ba-jfA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="FIND">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="findWeekdayTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IkV-5Y-3It"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check The  Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2O-n0-PdJ">
                                 <rect key="frame" x="65" y="144" width="284" height="51"/>
                                 <constraints>
@@ -130,16 +115,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgH-Uq-afQ">
+                                <rect key="frame" x="65" y="380" width="284" height="31"/>
+                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="94Y-Su-Tj3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="EAF-Ba-jfA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="FIND">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="findWeekdayTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IkV-5Y-3It"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="H2O-n0-PdJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="D9v-4B-pH6"/>
+                            <constraint firstItem="H2O-n0-PdJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="D9v-4B-pH6">
+                                <variation key="heightClass=compact-widthClass=compact" constant="9"/>
+                            </constraint>
                             <constraint firstItem="H2O-n0-PdJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="F5p-PL-RQf"/>
                             <constraint firstItem="qgH-Uq-afQ" firstAttribute="top" secondItem="tFB-3x-OjS" secondAttribute="bottom" constant="8" symbolic="YES" id="HOc-PJ-Gof"/>
                             <constraint firstItem="eNz-ie-xej" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="VAh-Ry-bCy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tFB-3x-OjS" secondAttribute="trailing" constant="65" id="WRM-Qe-vvg"/>
-                            <constraint firstItem="H2O-n0-PdJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="WbP-UY-YPh"/>
+                            <constraint firstItem="H2O-n0-PdJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="WbP-UY-YPh">
+                                <variation key="heightClass=compact-widthClass=compact" constant="9"/>
+                            </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H2O-n0-PdJ" secondAttribute="trailing" constant="65" id="XOS-tO-Tyt"/>
                             <constraint firstItem="tx2-LC-CUK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zqu-5x-RpQ"/>
                             <constraint firstItem="eNz-ie-xej" firstAttribute="top" secondItem="H2O-n0-PdJ" secondAttribute="bottom" constant="8" symbolic="YES" id="cHU-ZJ-38f"/>
@@ -147,20 +151,26 @@
                             <constraint firstItem="tx2-LC-CUK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="emo-e7-pQv"/>
                             <constraint firstItem="tFB-3x-OjS" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="jGS-XL-m37"/>
                             <constraint firstItem="qgH-Uq-afQ" firstAttribute="top" secondItem="tFB-3x-OjS" secondAttribute="bottom" constant="8" symbolic="YES" id="li3-90-t0V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qgH-Uq-afQ" secondAttribute="trailing" constant="90" id="o5O-cG-d0R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qgH-Uq-afQ" secondAttribute="trailing" constant="65" id="o5O-cG-d0R"/>
                             <constraint firstItem="tx2-LC-CUK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-36" id="rDo-at-eEJ"/>
                             <constraint firstItem="tFB-3x-OjS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="tbM-g0-J7q"/>
                             <constraint firstItem="tFB-3x-OjS" firstAttribute="top" secondItem="eNz-ie-xej" secondAttribute="bottom" constant="8" symbolic="YES" id="uhl-qd-lDA"/>
-                            <constraint firstItem="qgH-Uq-afQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="vRg-Ji-vsQ"/>
+                            <constraint firstItem="qgH-Uq-afQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="vRg-Ji-vsQ"/>
                             <constraint firstItem="tx2-LC-CUK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w80-yi-DyU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Day Finder" id="y1Q-Zs-TY7">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle.fill" catalog="system" id="Qmt-YU-5EF">
                             <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <segue destination="CwZ-zf-B1d" kind="push" identifier="dayFinder" id="EXP-47-Q1j"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="moon.circle.fill" catalog="system" id="sIh-Xu-qou">
                             <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <segue destination="7SY-8l-ft0" kind="presentation" id="JNx-cE-gQo"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -173,7 +183,128 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981.15942028985512" y="59.598214285714285"/>
+            <point key="canvasLocation" x="978.75" y="57.5"/>
+        </scene>
+        <!--Appearence View Controller-->
+        <scene sceneID="1j8-Qi-YUV">
+            <objects>
+                <viewController id="7SY-8l-ft0" customClass="AppearenceViewController" customModule="DayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rGZ-BZ-znJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFh-1D-eaF">
+                                <rect key="frame" x="20" y="20" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26137902010000003" green="0.77202946819999996" blue="0.85206896310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="7SY-8l-ft0" eventType="touchUpInside" id="Ih5-8p-qyE"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4MV-WK-esC">
+                                <rect key="frame" x="62.5" y="279.5" width="289" height="283"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Mode Is On" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdr-pp-Aaq">
+                                        <rect key="frame" x="0.0" y="0.0" width="289" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="AGL-wX-H1M"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="289" id="BGb-Q6-ZpA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6s4-l7-rki">
+                                        <rect key="frame" x="0.0" y="230" width="289" height="53"/>
+                                        <color key="backgroundColor" red="0.26137902010000003" green="0.77202946819999996" blue="0.85206896310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="Epg-LL-vI9"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="289" id="baf-q1-NzU"/>
+                                        </constraints>
+                                        <state key="normal" title="Open Settings">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openSettingsTapped:" destination="7SY-8l-ft0" eventType="touchUpInside" id="M4V-P8-JsX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bjg-dD-rOb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4MV-WK-esC" firstAttribute="centerY" secondItem="rGZ-BZ-znJ" secondAttribute="centerY" id="uKz-qn-iVN"/>
+                            <constraint firstItem="4MV-WK-esC" firstAttribute="centerX" secondItem="rGZ-BZ-znJ" secondAttribute="centerX" id="vEr-X1-NpH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="Wdr-pp-Aaq" id="cvI-e0-PWe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZP-Tf-OtM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734.7826086956522" y="57.589285714285708"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="Xq0-2K-iAO">
+            <objects>
+                <viewController id="CwZ-zf-B1d" customClass="InfoViewController" customModule="DayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iRx-73-uFV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="wsM-Sg-vLc">
+                                <rect key="frame" x="97" y="344.5" width="220" height="207"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Una-FO-cZT">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="bW4-dP-KVb"/>
+                                            <constraint firstAttribute="height" constant="90" id="fqU-5B-UfL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDW-HW-GhA">
+                                        <rect key="frame" x="0.0" y="117" width="220" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="FMM-XC-7G2"/>
+                                            <constraint firstAttribute="height" constant="90" id="wKk-xZ-3iA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TWg-3f-blx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wsM-Sg-vLc" firstAttribute="centerX" secondItem="iRx-73-uFV" secondAttribute="centerX" id="XrR-Wz-2ek"/>
+                            <constraint firstItem="wsM-Sg-vLc" firstAttribute="centerY" secondItem="iRx-73-uFV" secondAttribute="centerY" id="wNK-mo-DY5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kDM-Wv-AUj"/>
+                    <connections>
+                        <outlet property="appDescLabel" destination="iDW-HW-GhA" id="DEC-Cs-oXM"/>
+                        <outlet property="appInfo" destination="Una-FO-cZT" id="eLN-aH-Smo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vi6-KZ-DGI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.81159420289862" y="762.72321428571422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lTf-R9-B9y">
@@ -203,6 +334,9 @@
         </systemColor>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
