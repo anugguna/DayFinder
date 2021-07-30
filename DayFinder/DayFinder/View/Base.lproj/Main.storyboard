@@ -270,7 +270,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="220" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="bW4-dP-KVb"/>
-                                            <constraint firstAttribute="height" constant="90" id="fqU-5B-UfL"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="fqU-5B-UfL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <nil key="textColor"/>
@@ -280,7 +280,7 @@
                                         <rect key="frame" x="0.0" y="117" width="220" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="FMM-XC-7G2"/>
-                                            <constraint firstAttribute="height" constant="90" id="wKk-xZ-3iA"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="wKk-xZ-3iA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <nil key="textColor"/>
@@ -299,7 +299,6 @@
                     <navigationItem key="navigationItem" id="kDM-Wv-AUj"/>
                     <connections>
                         <outlet property="appDescLabel" destination="iDW-HW-GhA" id="DEC-Cs-oXM"/>
-                        <outlet property="appInfo" destination="Una-FO-cZT" id="eLN-aH-Smo"/>
                         <outlet property="appInfoLabel" destination="Una-FO-cZT" id="x5q-nO-G8c"/>
                     </connections>
                 </viewController>
