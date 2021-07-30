@@ -62,7 +62,8 @@ class ViewController: UIViewController {
         default:
             buttonFIND.setTitle("FIND", for: .normal)
             clearResultField()
-        //alert
+            self.resultLabel.layer.borderColor = nil
+            self.resultLabel.layer.borderWidth = 0      //alert
         }
     
     }
@@ -91,12 +92,10 @@ class ViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "dayFinder" {
-            
-        }
         // Get the new view controller using segue.destination.
         let vc = segue.destination as! InfoViewController
         // Pass the selected object to the new view controller.
-        vc.infoText = "DayFinder app finds \na weekday for given date."
+            vc.infoText = "DayFinder app finds \na weekday for given date."}
     }
     }
 

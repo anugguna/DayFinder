@@ -300,6 +300,7 @@
                     <connections>
                         <outlet property="appDescLabel" destination="iDW-HW-GhA" id="DEC-Cs-oXM"/>
                         <outlet property="appInfo" destination="Una-FO-cZT" id="eLN-aH-Smo"/>
+                        <outlet property="appInfoLabel" destination="Una-FO-cZT" id="x5q-nO-G8c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vi6-KZ-DGI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

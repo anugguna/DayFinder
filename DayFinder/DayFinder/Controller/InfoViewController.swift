@@ -9,6 +9,7 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    
     @IBOutlet weak var appInfoLabel: UILabel!
     @IBOutlet weak var appDescLabel: UILabel!
     
@@ -19,8 +20,9 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
         appDescLabel.text = appDescText
         
-        if !infoText.isEmpty{
+        if !infoText.isEmpty && !appDescText.isEmpty{
             appInfoLabel.text = infoText
+            appDescLabel.text = appDescText
         }
         
     }
